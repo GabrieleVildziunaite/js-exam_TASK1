@@ -41,8 +41,9 @@ form {
 #output {
 	max-width: 80%;
     margin: 50px auto;
-	display: block;
-
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5em;
 }
 
 #submit-btn {
@@ -69,4 +70,13 @@ form {
 	#submit-btn {
 		font-size: 2em;
 	}
+}
+
+.output {
+	background-color: white;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 65%;
+	border-top: white solid 1px;
 }

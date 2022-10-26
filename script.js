@@ -15,19 +15,23 @@ function convertMeasurements() {
     output.innerText = "";
     
     const pounds = (input * 2.2046).toFixed(2) + " lb";
-    const grams = (input / 0.0010000).toFixed(2) + " gr";
+    const grams = (input / 0.0010000).toFixed(0) + " gr";
     const ounce = (input * 35.274).toFixed(2) + " oz";
     const poundsDiv = document.createElement("div");
     poundsDiv.innerText = pounds;
+    poundsDiv.classList.add("output");
 
     const gramsDiv = document.createElement("div");
     gramsDiv.innerText = grams;
+    gramsDiv.classList.add("output");
 
     const ounceDiv = document.createElement("div");
     ounceDiv.innerText = ounce;
+    ounceDiv.classList.add("output");
     
 
     output.append(poundsDiv, gramsDiv, ounceDiv);
+    
     
 }
 
